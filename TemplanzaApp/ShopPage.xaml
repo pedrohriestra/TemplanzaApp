@@ -1,0 +1,29 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TemplanzaApp.ShopPage"
+             BackgroundColor="#F5F0E6"
+             Title="Shop">
+
+    <VerticalStackLayout Padding="30" Spacing="20">
+        <Label Text="Available Blends"
+               FontSize="22"
+               HorizontalOptions="Center"
+               TextColor="Black" />
+
+        <!-- Producto 1 -->
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="15">
+            <VerticalStackLayout>
+                <Label Text="Relax Blend" FontSize="18" TextColor="Black"/>
+                <Label Text="Herbal mix to relax and unwind." FontSize="14" TextColor="Gray"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <!-- Producto 2 -->
+        <Frame BackgroundColor="White" CornerRadius="10" Padding="15">
+            <VerticalStackLayout>
+                <Label Text="Energize Blend" FontSize="18" TextColor="Black"/>
+                <Label Text="Green tea and citrus for a boost." FontSize="14" TextColor="Gray"/>
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>

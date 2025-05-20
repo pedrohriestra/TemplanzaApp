@@ -1,0 +1,18 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TemplanzaApp.ServicePage"
+             BackgroundColor="#F5F0E6"
+             Title="Service">
+
+    <VerticalStackLayout Padding="30" Spacing="15">
+        <Label Text="Templanza is a handcrafted tea blend project."
+               FontSize="18"
+               TextColor="Black"/>
+        <Label Text="This app simulates a basic structure for showcasing the service."
+               FontSize="16"
+               TextColor="Gray"/>
+        <Label Text="It was developed using .NET MAUI for the Mobile Apps course."
+               FontSize="16"
+               TextColor="Gray"/>
+    </VerticalStackLayout>
+</ContentPage>

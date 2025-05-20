@@ -1,0 +1,30 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TemplanzaApp.HomePage"
+             BackgroundColor="#F5F0E6"
+             Title="Home">
+
+    <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
+
+        <Button Text="Shop"
+        Clicked="GoToShop"
+        BackgroundColor="#7B8C5A"
+        TextColor="White" />
+
+        <Button Text="About Developer"
+                Clicked="GoToDeveloper"
+                BackgroundColor="#7B8C5A"
+                TextColor="White" />
+
+        <Button Text="Service"
+                Clicked="GoToService"
+                BackgroundColor="#7B8C5A"
+                TextColor="White" />
+
+        <Button Text="Log Out"
+                Clicked="GoToLogin"
+                BackgroundColor="#A67C52"
+                TextColor="White" />
+
+    </VerticalStackLayout>
+</ContentPage>
