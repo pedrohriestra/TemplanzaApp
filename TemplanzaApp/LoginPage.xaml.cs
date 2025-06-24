@@ -2,6 +2,8 @@ namespace TemplanzaApp;
 
 public partial class LoginPage : ContentPage
 {
+    bool isPasswordHidden = true;
+
     public LoginPage()
     {
         InitializeComponent();
@@ -22,5 +24,11 @@ public partial class LoginPage : ContentPage
         }
 
     }
+    private void TogglePasswordVisibility(object sender, EventArgs e)
+    {
+        isPasswordHidden = !isPasswordHidden;
+        passwordEntry.IsPassword = isPasswordHidden;
+    }
+
 
 }

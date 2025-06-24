@@ -7,26 +7,30 @@
     <ScrollView>
         <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
 
-            <!-- Logo -->
             <Image Source="loginpage.png"
                    HeightRequest="120"
                    HorizontalOptions="Center"/>
 
-            <!-- Username -->
             <Entry x:Name="usernameEntry"
                    Placeholder="Username"
                    BackgroundColor="White"
                    TextColor="Black"/>
 
-            <!-- Password -->
             <Entry x:Name="passwordEntry"
                    Placeholder="Password"
-                   IsPassword="True"
+                   IsPassword="{Binding IsPasswordVisible, Mode=TwoWay}"
                    BackgroundColor="White"
                    TextColor="Black"/>
-
-            <!-- Login Button -->
-            <Button Text="Sign In"
+            <ImageButton Source="checkbox.svg"
+                   Clicked="TogglePasswordVisibility"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   BackgroundColor="Transparent"
+                   WidthRequest="25"
+                   HeightRequest="25"/>
+            
+                <Button Text="Sign In"
+                    ImageSource="loginicon.svg"
                     Clicked="OnLoginClicked"
                     BackgroundColor="#7B8C5A"
                     TextColor="White"/>

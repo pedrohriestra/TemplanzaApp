@@ -7,21 +7,25 @@
     <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
 
         <Button Text="Shop"
-        Clicked="GoToShop"
-        BackgroundColor="#7B8C5A"
-        TextColor="White" />
+                ImageSource="shopcart.svg"
+                Clicked="GoToShop"
+                BackgroundColor="#7B8C5A"
+                TextColor="White" />
 
         <Button Text="About Developer"
+                ImageSource="information.svg"
                 Clicked="GoToDeveloper"
                 BackgroundColor="#7B8C5A"
                 TextColor="White" />
 
         <Button Text="Service"
+                ImageSource="article.svg"
                 Clicked="GoToService"
                 BackgroundColor="#7B8C5A"
                 TextColor="White" />
 
         <Button Text="Log Out"
+                ImageSource="loginicon.svg"
                 Clicked="GoToLogin"
                 BackgroundColor="#A67C52"
                 TextColor="White" />
